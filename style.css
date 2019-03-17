@@ -1,0 +1,905 @@
+/* Elements principaux */
+
+*
+{
+	font-family: 'Roboto  ' , sans-serif;
+}
+
+body
+{
+	margin: 0;
+	padding: 0;
+
+}
+
+p
+{
+	color: #72757a;
+	font-size: 0.9em;
+}
+h1
+{
+	
+	font-size: 2em;
+}
+.presentation
+{
+	text-align: center;
+}
+
+
+
+/* =========================== HEADER =============================== */
+
+header
+{
+	
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	position: fixed;
+	z-index: 1;
+	background-color: white;
+	width: 100%;
+
+}
+
+nav ul
+{
+	list-style-type: none;
+	display : flex;
+	margin-right: 150px;
+}
+
+nav li
+{
+	margin-right: 20px;
+}
+
+nav a
+{
+
+	text-decoration: none;
+	padding-top: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #72757a;
+}
+
+#menu_standard nav a:hover
+{
+	border-top: 3px solid #5cadd3;
+	color: black;
+	
+
+}
+
+#logo 
+{
+	margin-left: 11%;
+}
+
+/* Menu Burger */
+
+.material-icons
+{
+  font-size:24px;
+  margin-right:12px;
+  vertical-align:text-bottom;
+}
+
+
+.menu_burger
+{
+	display: none;
+  background:white;
+  width: 250px;
+  height:50px;
+  position:relative;
+
+}
+
+.menu_burger .logo_burger
+{
+
+  line-height:33px;
+  margin-left: 60px;
+  
+}
+.menu_burger .logo_burger img
+{
+	width: 200px;
+	height: auto;
+}
+.menu_burger .burger
+{
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  appearance:none;
+  color:#5cadd3;
+  cursor:pointer;
+  font-family:'Material Icons';
+  font-size:30px;
+  line-height:50px;
+  margin:0;
+  outline:0;
+  padding:0;
+  position:absolute;
+  text-align:center;
+  top:0;
+  left:10px;
+  width:50px;
+}
+
+.menu_burger .burger:before
+{
+  content:'menu';
+}
+
+.menu_burger .burger:checked:before
+{
+  content:'close';
+}
+
+.menu_burger nav
+{
+	
+	box-shadow: 10px 4px 5px #656565;
+	background:white;
+	font-size:20px;
+	font-weight:bold;
+	height:0;
+	overflow: hidden;
+	text-transform:uppercase;
+	transition:height 0.5s;
+}
+.menu_burger nav > *
+{
+	color: #5cadd3;
+  display:block;
+  letter-spacing:1px;
+  line-height:2.5;
+  padding:0 20px;
+  width:100%;
+}
+.menu_burger .burger:checked + nav
+{
+  height:calc(100vh - 50px);
+}
+
+
+
+/*============================= ACCUEIL ============================== */
+
+
+
+#accueil
+{
+
+	position:relative;
+	overflow: hidden;
+
+	
+}
+
+#accueil img
+{
+
+	
+	width: 100%;
+	margin-top: 97px;
+	
+}
+
+/* Boutons slider */ 
+
+.fleche_gauche, .fleche_droite
+
+{
+
+	color: white;
+	font-size: 1.5em;
+
+}
+.fleche_gauche
+{
+	position: relative;
+	left: 10px;
+}
+
+.fleche_droite
+{
+
+	position: relative;
+	right: 10px;
+}
+
+
+#arrondi_fleche_gauche
+{
+	position: absolute;
+	left: -35px;
+	top: 50%;
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 0 50px 50px 0;
+
+}
+
+#arrondi_fleche_droite
+
+{
+	position: absolute;
+	right: -35px;
+	top: 50%;
+	padding: 30px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 50px 0 0 50px;
+
+}
+
+/* Texte accueil */ 
+
+.texte_accueil
+{
+
+	color: white;
+	position: absolute;
+	left: 11%;
+	top: 35%;
+	font-weight: 700;
+	width: 600px;
+
+}
+.texte_accueil p
+{
+	color: white;
+	margin-bottom: 40px;
+}
+
+.texte_accueil a
+{
+	text-decoration: none;
+}
+
+strong
+{
+	color: #5cadd3;
+	font-weight: 900;
+}
+
+.bouton_bleu
+{
+	border-bottom: 4px solid #4494bb;
+	padding: 10px;
+	background-color: #5cadd3;
+	border-radius: 5px;
+	color: white;
+
+}
+
+/* Slider */
+
+
+
+
+
+/*====================================== SERVICES =============================  */
+
+aside
+{
+	display: flex;
+	
+}
+
+aside p
+{
+	text-align: justify;
+
+}
+
+
+/* Titre Service */
+h2
+{
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 100px;
+	font-weight: 700;
+    font-size: 2.5em;
+    color: #272727;
+}
+
+/* Titre Ux Design , UI Design , SEO */ 
+
+h3
+{
+	color: #272727;
+	margin-bottom: -10px;
+}
+
+/* Trait et Rond Bleu sous le titre */
+
+.trait_separation
+{
+	display: flex;
+	justify-content: center;
+}
+.trait
+{
+	border-bottom: 1px solid #D7D7D7;
+    width: 50px;
+}
+
+.rond_bleu_trait
+{
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: #5cadd3;
+	width: 15px;
+	height: 15px;
+	position: relative;
+    top: 7px;
+
+}
+
+#bloc_services
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 75px;
+	margin-left: 10%;
+	margin-right: 10%
+}
+
+/* Partie Texte + Icone Services */ 
+
+#bloc_texte_icones_services
+{
+max-width: 700px;
+margin-right: 50px;
+}
+
+
+.rond_bleu
+{
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: #5cadd3;
+	width: 15px;
+	height: 15px;
+	position: relative;
+    left: 70px;
+    top: 50px;
+
+}
+
+.rond_gris
+{
+	border-radius: 50%;
+	border: 1px solid #D7D7D7;
+	height: 75px;
+	width: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+#bloc_services img
+{
+	width: 40%;
+	height: auto;
+}
+.icone
+{
+	font-size: 1.7em;
+	color: #5cadd3;
+}
+.texte_service
+{
+	margin-left: 20px;
+}
+
+
+/*====================================== PORTFOLIO ==============================  */
+
+
+
+#menu_projets
+{
+	display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+
+}
+
+#menu_projets a
+{
+
+	margin-right: 20px;
+	margin-left: 20px;
+	text-decoration: none;
+	color: #72757a;
+	font-weight: 500;
+}
+
+
+/* Menu Portfolio  */
+
+
+.item_menu_portfolio
+
+{
+
+	background-color: #e5e5e5;
+	border-bottom: 3px solid #e5e5e5;
+	text-align: center;
+	position : relative;
+		
+}
+.portfolio_right
+{
+	border-radius: 0 5px 5px 0;
+}
+
+.portfolio_left
+{
+	border-radius: 5px 0 0 5px;
+
+}
+
+.item_menu_portfolio:hover 
+{
+	background-color: #5cadd3;
+	border-bottom: 3px solid #4494bb;
+}
+.item_menu_portfolio:hover >p >a
+{
+	color: white !important;
+}
+
+.item_menu_portfolio:hover .triangle
+{
+	display: block;
+}
+
+.triangle
+{
+	display: none;
+    font-size: 1.8em;
+    color: #4494bb;
+    position: absolute;
+    left: 40px;
+    bottom: -18px;
+  
+}
+
+/* Photos porfolio  */
+
+#photos_portfolio
+{
+	
+	margin-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+
+	
+
+}
+
+.item_portfolio
+{
+
+
+	margin : 10px;
+	position: relative;
+}
+
+.item_portfolio img
+{
+	width: 400px;
+	height: auto;
+}
+
+.item_portfolio:hover .description_portfolio
+{
+	display: block;
+}
+
+.description_portfolio
+{
+	display: none;
+	position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 4px;
+    width: 100%;
+    height: 70px;
+
+   
+}
+.description_portfolio p 
+{
+
+	color: white;
+	margin-left: 15px;
+	line-height: 160%;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icone_portfolio
+{
+	font-weight: 900;
+	font-size: 2em;
+	position: absolute;
+	bottom: 50px;
+    left: 315px;
+    width: 40px;
+    height: 40px;
+    background-color: #5cadd3;
+    border: 2px solid white;
+    border-radius: 100%
+    
+}
+
+.oeil
+{
+	position: relative;
+    left: 8px;
+    bottom: 6px;
+    font-size: 0.7em;
+}
+
+
+.nom_entreprise
+{
+	font-weight: 800;
+}
+
+/* ==================================  Contact =========================  */
+
+#contact
+{
+	position: relative;
+}
+
+
+#voile_bleu 
+{
+	margin-top: 6%;
+	border: 0;
+	width: 100%;
+	height: 600px;
+    background-color: #0078ff;
+    
+
+}
+
+
+iframe
+{
+	
+	width: 100%;
+	opacity: 0.7;
+	
+    
+	
+}
+
+/* Formulaire  */
+
+#formulaire
+{
+	width: 315px;
+    height: 475px;
+    position: absolute;
+    top: 70px;
+    right: 8%;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-weight: bold;
+
+}
+
+#adresse
+{
+
+	margin-left: 15px;
+	margin-bottom: 30px;
+
+}
+
+
+#adresse p
+{
+	margin-bottom: -10px;
+	font-size: 0.75em;
+}
+#adresse a
+{
+	text-decoration: none;
+	pointer-events: none;
+	cursor: default;
+}
+
+#webagency
+{
+	margin-top: 15px;
+	font-weight: 800;
+}
+
+#infos_formulaire
+{
+	margin-top: 20px;
+
+}
+
+input[class="formulaire_input"]
+{
+	margin-left: 15px;
+	width : 275px;
+	height: 20px;
+	border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+textarea
+{
+	margin-left: 15px;
+	width: 272px;
+	height: 150px;
+	border: 1px solid #cbcbcb;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#send_message
+{
+	margin-left: 15px;
+	width: 120px;
+	height: 35px;
+	border: 1px solid #5CADD3;
+	border-bottom: 4px solid #4494bb;
+	background-color: #5cadd3;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+
+}
+
+/* ===================================== MEDIA QUERIES = Regles d'affichages Ecran inférieur à 1155px ============================================= */
+
+@media all and (max-width: 1155px)
+{
+	.texte_accueil
+	{
+		text-align: center;
+		width: 420px;
+		top: 30%;
+		left: 6%;
+		font-size: 0.9em;
+		
+	}
+	.agency_texte_accueil 
+	{
+		display: block;
+	}
+	.deux_points
+	{
+		display: none;
+	}
+}
+
+/* ===================================== MEDIA QUERIES = Regles d'affichages Ecran inférieur à 850px ============================================= */
+
+@media all and (max-width: 850px)
+
+{
+
+
+/* =================== Organisation du Header + Menu Burger ================   */ 
+	header
+	{
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	#menu_standard nav
+	{
+		display: none;
+	}
+	#logo
+	{
+		display: none;
+	}
+	#accueil img
+	{
+		margin-top: 61px;
+	}
+	.menu_burger
+	{
+		display:block;
+	}
+
+/* ======================= ACCUEIL =============================	*/
+
+/* Texte accueil */ 
+ .texte_accueil
+	{
+		width: 295px;
+		top: 30%;
+		left:7%;
+		font-size: 0.7em;
+
+	}
+	.texte_accueil p
+	{
+		display: none;
+
+	}
+	.bouton_bleu
+	{
+		padding: 5px;
+		font-size: 1.5em;
+	}
+
+/* Fleches slider */
+	#arrondi_fleche_gauche
+	{
+		top: 40%;
+	}
+
+	#arrondi_fleche_droite
+	{
+		top: 40%;
+	}
+
+/* =================== SERVICES ======================== */
+/* Photo */
+	#bloc_services
+	{
+		display: block;
+	}
+	#bloc_services img
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 85%;
+		height: auto;
+	}
+
+/* Texte Service */
+
+	aside
+	{
+	display: block;
+	}
+	.rond_bleu
+	{
+
+    left: 30px;
+    top: 85px;
+
+	}
+	h3
+	{
+	margin-bottom: 0;
+	}
+
+/* ================  FORMULAIRE  =========================  */
+
+	#voile_bleu 
+	{
+		display: none;
+	}
+	iframe
+	{
+	display: none;
+		
+	}
+
+	/* Formulaire  */
+
+	#formulaire
+	{
+		margin-bottom: 15px;
+		background-color:white;
+		left: 50%;
+		margin-left: -157px;
+		border : 2px solid #5CADD3;
+		border-radius: 3px;
+	}
+	input[class="formulaire_input"]
+	{
+		
+		border: 1px solid #5CADD3;
+	   
+	 
+	}
+	textarea
+	{
+	
+		border: 1px solid #5CADD3;
+	
+	
+	}
+	#adresse a
+	{
+		text-decoration: underline dotted blue;
+		pointer-events: auto;
+		cursor: pointer;
+	}
+
+}
+
+/* ===================================== MEDIA QUERIES = Regles d'affichages Ecran inférieur à 530px ============================================= */
+@media all and (max-width: 530px)
+{
+	 .texte_accueil
+	{
+		width: 200px;
+		top: 33%;
+		left:9%;
+		font-size: 0.5em;
+
+	}
+	.bouton_bleu
+	{
+		padding: 5px;
+		font-size: 1.6em;
+	}
+}
+
+/* ===================================== MEDIA QUERIES = Regles d'affichages Ecran inférieur à 400px ============================================= */
+
+@media all and (max-width: 400px)
+{
+	#menu_projets
+	{
+    margin-top: 40px;
+    margin-bottom: 50px;
+	}
+	#menu_projets a
+	{
+	margin-right: 10px;
+	margin-left: 10px;
+	}
+	.triangle
+	{
+	left: 30px;
+  	}
+
+
+	.item_portfolio img
+	{
+	width: 100%;
+	height: auto;
+	}
+	.icone_portfolio
+	{
+    left: 270px;
+	}
+	
+}
+
+/* ===================================== MEDIA QUERIES = Regles d'affichages Ecran inférieur à 320px ============================================= */
+
+@media all and (max-width: 320px)
+{
+	.icone_portfolio
+	{
+    left: 220px;
+	}
+}
+
+
+
+
